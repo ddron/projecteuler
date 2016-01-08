@@ -1,4 +1,4 @@
-package com.amarkin.projecteuler.problem12;
+package com.amarkin.projecteuler;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package com.amarkin.projecteuler.problem13;
+package com.amarkin.projecteuler;
 
 import java.math.BigDecimal;
 

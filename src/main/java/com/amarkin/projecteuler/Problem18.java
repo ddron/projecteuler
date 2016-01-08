@@ -1,4 +1,4 @@
-package com.amarkin.projecteuler.problem18;
+package com.amarkin.projecteuler;
 
 /**
  * Created by amarkin on 12/5/2015.

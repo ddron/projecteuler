@@ -1,35 +1,30 @@
-package com.amarkin.projecteuler.problem7;
+package com.amarkin.projecteuler;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.sun.scenario.effect.impl.sw.java.JSWBlend_SRC_OUTPeer;
 
 /**
  * Created by amarkin on 6/13/2015.
  */
-public class Problem7 {
+public class Problem10 {
 
     public static void main(String[] args) {
+
         long start = System.currentTimeMillis();
 
-        int maxNumber = 200_000;
+        int maxNumber = 1_999_999;
         int firstNumber = 2;
-        int nth = 10_001;
 
         int[] arr = getPopulatedArray(maxNumber);
 
         int maxElemToCheck = (int) Math.sqrt(maxNumber);
-
-        List<Integer> primes = new ArrayList<>();
+        long sum = 0;
 
         for (int i = firstNumber; i < arr.length; i++) {
             if (arr[i] == 0) {
                 continue;
             }
-            System.out.print(i + " ");
-            primes.add(i);
-            if (primes.size() == nth) {
-                break;
-            }
+            //System.out.print(i + " ");
+            sum += i;
             if (i > maxElemToCheck) {
                 continue;
             }
@@ -39,10 +34,12 @@ public class Problem7 {
                 arr[j] = 0;
             }
         }
-        System.out.println(primes.get(nth - 1));
         long end = System.currentTimeMillis();
-        System.out.println(end - start);
+        System.out.println("\n" + (end - start));
+        System.out.println(sum);
+
     }
+
 
     private static int[] getPopulatedArray(int maxNumber) {
         int[] arr = new int[maxNumber + 1];

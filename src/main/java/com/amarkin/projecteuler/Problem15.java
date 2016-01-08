@@ -1,4 +1,4 @@
-package com.amarkin.projecteuler.problem15;
+package com.amarkin.projecteuler;
 
 import java.util.Arrays;
 
